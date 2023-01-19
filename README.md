@@ -8,4 +8,4 @@
 
 
 #### Avatar:
-![Avatar]((https://images.sw.cdn.siemens.com/siemens-disw-assets/public/6i6Vk3yGVZZnSQ7HZQVLby/en-US/MBSE-Connects-Concept-Design-and-Product-Engineering-640x360.png?auto=format%2Ccompress&w=640&h=360&q=60&fit=crop))
+![Avatar](https://images.sw.cdn.siemens.com/siemens-disw-assets/public/6i6Vk3yGVZZnSQ7HZQVLby/en-US/MBSE-Connects-Concept-Design-and-Product-Engineering-640x360.png?auto=format%2Ccompress&w=640&h=360&q=60&fit=crop)
