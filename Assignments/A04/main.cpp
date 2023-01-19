@@ -8,6 +8,8 @@
 *  Semester:         Spring 2023
 * 
 *  Description:
+*        Usable ????????????
+*
 *        This program implements a class that allows a linked list to be used just like 
 *        an array. It overloads the "[]" (square brackets) to simulate accessing seperate 
 *        array elements, but really it traverses the list to find the specified node using
@@ -33,6 +35,7 @@
 
 using namespace std;
 
+// Block comment for class ????????????????????????????
 
 class CircularArrayQue {
 private:
@@ -51,6 +54,27 @@ private:
     }
 
 public:
+    
+   // Comment block for each?????
+    
+    // Slack ?
+    
+    /**
+     * Public/Private/Protected : function_name
+     * 
+     * Description:
+     *      Describe the functions purpose
+     * 
+     * Params:
+     *      - list params
+     *      - one per line
+     *      - with return type
+     *      - and one line description
+     * 
+     * Returns:
+     *      - what does this function return (including the type)?
+     */
+    
     CircularArrayQue() {
         Container = new int[10];
         init(10);
@@ -60,6 +84,8 @@ public:
         init(size);
     }
 
+    //Comment block for each function ???
+    
     void Push(int item) {
         if (!Full()) {
             Container[Rear] = item;
