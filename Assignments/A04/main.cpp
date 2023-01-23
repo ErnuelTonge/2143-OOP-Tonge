@@ -3,28 +3,18 @@
 *  Author:           Ernuel Tonge
 *  Email:            ernuel0910@gmail.com
 *  Label:            A04
-*  Title:            Linked List Class
+*  Title:            Commenting Code
 *  Course:           CMPS 2143
 *  Semester:         Spring 2023
 * 
 *  Description:
-*        Usable ????????????
-*
-*        This program implements a class that allows a linked list to be used just like 
-*        an array. It overloads the "[]" (square brackets) to simulate accessing seperate 
-*        array elements, but really it traverses the list to find the specified node using
-*        an index value. It also overloads the "+" and "-" signs allowing a user to "add"
-*        or "push" items onto the end of the list, as well as "pop" items off the end of our 
-*        array. This class is not meant to replace the STL vector library, its simply a project
-*        to introduce the beginnings of creating complex / abstract data types. 
-*       
-*        This program implements a list data structure that links together nodes of integers. It does more stuff, but we don't need to write that here.
+*        This program implements a class that allows a dynamically alocated array to be used just like 
+*        a Queue. 
 *
 *
 *        
 *  Usage: 
-*       - $ ./main filename
-*       - This will read in a file containing whatever values to be read into our list/array. 
+*       - This will demonstrate the use of an array bases Queue. 
 *       
 *  Files:            
 *       main.cpp    : driver program 
@@ -35,7 +25,28 @@
 
 using namespace std;
 
-// Block comment for class ????????????????????????????
+/**
+ * Class Name: CircularArrayQue
+ * 
+ * Description:
+ *      This class creates, traverses, and manipulates a dynamically allocated array based Queue.
+ * 
+ * Public Methods:
+ *                          CircularArrayQue()    
+ *                          CircularArrayQue(int size) 
+ *      void                Push(int item)
+ *      int                 Pop()
+ * 
+ * Private Methods:
+ *      void                init(int size = 0)
+ *      bool                full()
+ * 
+ * Usage: 
+ * 
+ *      CircularArrayQue C1(5);                         // Create Que array and initialize size
+ *      C1.Push(34);                                    // Push interger value onto the Que
+ *      C1.Pop(54);                                     // Pops interger value off of the Que.
+ */
 
 class CircularArrayQue {
 private:
@@ -44,47 +55,93 @@ private:
     int Rear;
     int QueSize; // items in the queue
     int CurrentSize;
+    
+    /**
+     * Private : init
+     * 
+     * Description:
+     *      Initialize member variables.
+     * 
+     * Params:
+     *     int     :  initial value of member variables 
+     * 
+     * Returns:
+     *      - nothing
+     */
+    
     void init(int size = 0) {
         Front = Rear = CurrentSize = 0;
         QueSize = size;
     }
 
+    /**
+     * Private : Full
+     * 
+     * Description:
+     *      Checks the status of the Que buy comparing the total space of the Que to the space being occupied. 
+     * 
+     * Params:
+     *      - none
+     * 
+     * Returns:
+     *      bool   : Status of the Que.
+     */
+    
     bool Full() {
         return CurrentSize == QueSize;
     }
 
 public:
     
-   // Comment block for each?????
-    
-    // Slack ?
-    
     /**
-     * Public/Private/Protected : function_name
+     * Public : CircularArrayQue()
      * 
      * Description:
-     *      Describe the functions purpose
+     *      Creates an array of predetermined size 10.
      * 
      * Params:
-     *      - list params
-     *      - one per line
-     *      - with return type
-     *      - and one line description
+     *      - non
      * 
      * Returns:
-     *      - what does this function return (including the type)?
+     *      - nothing
      */
     
     CircularArrayQue() {
         Container = new int[10];
         init(10);
     }
+    
+    /**
+     * Public : CircularArrayQue(int size)
+     * 
+     * Description:
+     *      Creates an array to be used as a Que, of a size corresponding with the integer value passed to the function.
+     * 
+     * Params:
+     *     int     :  array size
+     *      
+     * Returns:
+     *      - nothing
+     */
+    
+    
     CircularArrayQue(int size) {
         Container = new int[size];
         init(size);
     }
 
-    //Comment block for each function ???
+    /**
+     * Public : Push
+     * 
+     * Description:
+     *      Checks the status of the Que and if not full pushes a value onto the Que and if full prints "FULL" to the screen. 
+     * 
+     * Params:
+     *      int     :  value to be added to Que
+     * 
+     * Returns:
+     *      - nothing
+     */
     
     void Push(int item) {
         if (!Full()) {
@@ -95,6 +152,19 @@ public:
             cout << "FULL!!!!" << endl;
         }
     }
+
+    /**
+     * Public : Pop
+     * 
+     * Description:
+     *      Pops value off of the Que.
+     * 
+     * Params:
+     *      none
+     * 
+     * Returns:
+     *      int  : the value removed from the Que.
+     */
 
     int Pop() {
         int temp = Container[Front];
