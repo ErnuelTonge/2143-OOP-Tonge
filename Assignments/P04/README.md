@@ -5,7 +5,7 @@
 
 This project implements a Die and Dice classes in Python, using a c++ code as a template.
 It implements a standard roll just to sum up all dice and return that value and also 
-implements the min, max and avg roll methods that are not implemented as of yet.
+implements the min, max and avg roll methods.
 
 
 
