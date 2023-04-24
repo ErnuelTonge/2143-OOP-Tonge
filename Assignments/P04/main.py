@@ -44,7 +44,7 @@ from Dice import Dice
      *      testType  :  string specifying which test to execute 
      * 
      * Returns:
-     *      List*   : a pointer to a linked list of integers.
+     *      nothing
      */
 """
 
