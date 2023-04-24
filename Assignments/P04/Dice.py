@@ -2,7 +2,6 @@
 /*****************************************************************************
 *                    
 *  Author:           Ernuel Tonge
-*  Email:            terry.griffin@msutexas.edu
 *  Label:            P04
 *  Title:            Roll them Bones!
 *  Course:           CMPS 2143
