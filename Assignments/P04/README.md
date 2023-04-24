@@ -18,6 +18,5 @@ implements the min, max and avg roll methods that are not implemented as of yet.
 
 ### Instructions
 
-N/A
 Main can be run from the comand line with the instruction Python Main.py and Dice.py can be run using Python Dice.py
 
