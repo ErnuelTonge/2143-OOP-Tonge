@@ -19,8 +19,6 @@ Class: 2143 OOP
 >
 ><img width="755" alt="image" src="https://user-images.githubusercontent.com/123034903/235331197-21671736-0456-4273-96c2-f3aa9d71c43f.png">
 >
-
-
 ><img width="761" alt="image" src="https://user-images.githubusercontent.com/123034903/235331254-aba61b0f-c8a6-4c9e-b5b6-f3a9c2441086.png">
 >
 
