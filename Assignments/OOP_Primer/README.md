@@ -149,8 +149,8 @@ print(acct1.balance)           # Output: 1050.0
 >
 >Here's an example of how a class variable can be defined in C++:
 >
->```
-#include <iostream>
+```
+>#include <iostream>
 using namespace std;
 
 class BankAccount {
