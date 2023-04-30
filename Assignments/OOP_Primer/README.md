@@ -442,25 +442,25 @@ int main() {
 >
 >Here's an example of inheritance in C++:
 >
-```
-#include <iostream>
-using namespace std;
-
-class Animal {
-protected:
-    string name;
-public:
-    Animal(string n) {
-        name = n;
-    }
-    void eat() {
-        cout << name << " is eating." << endl;
-    }
-    void sleep() {
-        cout << name << " is sleeping." << endl;
-    }
-};
-
+>```
+>#include <iostream>
+>using namespace std;
+>
+>class Animal {
+>protected:
+>    string name;
+>public:
+>    Animal(string n) {
+>        name = n;
+>    }
+>    void eat() {
+>        cout << name << " is eating." << endl;
+>    }
+>    void sleep() {
+>        cout << name << " is sleeping." << endl;
+>    }
+>};
+>
 >class Cat : public Animal {
 >public:
     >Cat(string n) : Animal(n) {}
