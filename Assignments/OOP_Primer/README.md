@@ -558,4 +558,51 @@ int main() {
 >
 >We create a `Car` object in the `myCar` variable and call its `printDetails` member function to print the details of the car. We also use the `setMake` member function to change the value of the `make` instance variable to "Honda", and then call `printDetails` again to see the updated details.
 
+### Member Variable
+    ### Member Variable
+>
+>In computer science, a member variable is a variable that is declared within a class definition and belongs to all instances of that class. It is also known as an instance variable or a member field.
+>
+>Member variables define the state or properties of an object, and they have a different value for each instance of the class. When an object is created from a class, it has its own set of member variables that are initialized to their default values or to the values provided in the constructor. Member variables are typically declared as private or protected to encapsulate the state of the object and prevent direct access from outside the class.
+>
+>To access and modify the member variables, we use member functions, which are also known as methods. By using member functions, we can control the access to the member variables and enforce certain rules and constraints on their values. This allows us to maintain the integrity of the object's state and ensure that it behaves as intended.
+>
+>
+>Member variables are typically declared as private or protected, to encapsulate the state of the object and prevent direct access from outside the class. To access and modify the member variables, we use member functions.
+>
+>
+>In summary, member variables are an essential part of object-oriented programming and allow us to define the state of an object, which can be accessed and modified through member functions.
+>
+>Here's an example in C++:
+>
+```
+#include <iostream>
+using namespace std;
 
+class Rectangle {
+    private:
+        int width;
+        int height;
+
+    public:
+        Rectangle(int width, int height) {
+            this->width = width;
+            this->height = height;
+        }
+
+        int getArea() {
+            return width * height;
+        }
+};
+
+int main() {
+    Rectangle myRectangle(5, 3);
+    cout << "Area of rectangle: " << myRectangle.getArea() << endl;
+
+    return 0;
+}
+```
+>
+>In this example, we have a class `Rectangle` with two member variables `width` and `height`. The constructor takes these variables as parameters and initializes them to the values provided. We also have a `getArea` member function to calculate and return the area of the rectangle.
+>
+>We create a `Rectangle` object in the `myRectangle` variable and call its `getArea` member function to calculate and print the area of the rectangle. The `width` and `height` member variables are accessed through the `this` pointer, which refers to the current object.    
