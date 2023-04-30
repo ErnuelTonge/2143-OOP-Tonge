@@ -104,3 +104,98 @@ person1.say_hello()  # Output: "Hello, my name is John and I am 30 years old."
 >The constructor of the Rectangle class takes two arguments, w and h, and initializes the width and height attributes of the object.
 >
 >We create a new Rectangle object called rect1 and calculate its area and perimeter using the area and perimeter methods. We can then print the results using cout.
+
+### Class Variable
+>
+>In computer science, a class variable (also known as a static variable) is a variable that is shared by all instances of a class. In other words, a class variable is a property of the class itself, rather than a property of individual objects created from the class.
+>
+>Class variables are useful for storing data that is shared by all instances of a class. For example, if we have a class that represents a bank account, we might use a class variable to keep track of the interest rate for all accounts.
+>
+>Here's an example of how a class variable can be defined in Python:
+>
+```
+class BankAccount:
+    interest_rate = 0.05
+
+    def __init__(self, balance):
+        self.balance = balance
+
+    def add_interest(self):
+        self.balance += self.balance * BankAccount.interest_rate
+```
+>
+>In this example, we define a class called `BankAccount` that has a class variable called `interest_rate`. We also define an `__init__` method that initializes the `balance` attribute of a new object, and a `add_interest` method that adds interest to the account balance.
+>
+>The `add_interest` method uses the `BankAccount.interest_rate` class variable to calculate the interest to be added.
+>
+>We can create new `BankAccount` objects using the class, and access the `interest_rate` class variable using dot notation:
+>
+```
+acct1 = BankAccount(1000)
+acct2 = BankAccount(5000)
+
+print(acct1.balance)           # Output: 1000
+print(acct2.balance)           # Output: 5000
+
+print(BankAccount.interest_rate) # Output: 0.05
+
+acct1.add_interest()
+print(acct1.balance)           # Output: 1050.0
+```
+>
+>In this example, both `acct1` and `acct2` share the same `interest_rate` class variable, which is set to `0.05`. When we call the `add_interest` method on `acct1`, it uses the `BankAccount.interest_rate` class variable to calculate the interest to be added.
+>
+>This demonstrates how a class variable can be defined and used to store data that is shared by all instances of a class.
+>
+>Here's an example of how a class variable can be defined in C++:
+>
+```
+#include <iostream>
+using namespace std;
+
+class BankAccount {
+public:
+    static double interestRate;
+
+    BankAccount(double balance) {
+        this->balance = balance;
+    }
+
+    void addInterest() {
+        balance += balance * interestRate;
+    }
+
+    double getBalance() {
+        return balance;
+    }
+
+private:
+    double balance;
+};
+
+double BankAccount::interestRate = 0.05;
+
+int main() {
+    BankAccount acct1(1000);
+    BankAccount acct2(5000);
+
+    cout << "Acct1 balance: " << acct1.getBalance() << endl;
+    cout << "Acct2 balance: " << acct2.getBalance() << endl;
+
+    acct1.addInterest();
+
+    cout << "Acct1 balance after interest: " << acct1.getBalance() << endl;
+
+    return 0;
+}
+```
+>
+>In this example, we define a class called `BankAccount` that has a class variable called `interestRate`. We use the `static` keyword to indicate that this variable is shared by all instances of the class.
+>
+>We also define a constructor that takes a `balance` argument and initializes the `balance` attribute of a new object. We define a `addInterest` method that adds interest to the account balance using the `interestRate` class variable. Finally, we define a `getBalance` method that returns the account balance.
+>
+>We initialize the `interestRate` class variable to `0.05` outside of the class definition, and access it using the scope resolution operator `BankAccount::` in the `addInterest` method.
+>
+>We create two new `BankAccount` objects called `acct1` and `acct2`, and print their initial balances using the `getBalance` method. We call the `addInterest` method on `acct1`, which adds interest to its balance using the `interestRate` class variable. We then print the updated balance of `acct1`.
+>
+>This is just a simple example, but it demonstrates how a class variable can be defined and used to store data that is shared by all instances of a class in C++.
