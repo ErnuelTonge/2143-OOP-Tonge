@@ -20,11 +20,8 @@ Class: 2143 OOP
 >
 ><img width="761" alt="image" src="https://user-images.githubusercontent.com/123034903/235331254-aba61b0f-c8a6-4c9e-b5b6-f3a9c2441086.png">
 >
-
-
 ><img width="1199" alt="image" src="https://user-images.githubusercontent.com/123034903/235331410-1b34a0fc-0d7c-4412-9ec5-8bdc1c54fa0e.png">
 >
-
 ><img width="1195" alt="image" src="https://user-images.githubusercontent.com/123034903/235331422-bb409307-a72f-4d5d-a9ab-d5ab7e8a46be.png">
 
 This is your definition of what a class is. Using images is A-ok. For example: 
