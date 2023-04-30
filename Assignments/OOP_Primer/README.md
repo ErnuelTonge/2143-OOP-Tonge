@@ -150,7 +150,7 @@ print(acct1.balance)           # Output: 1050.0
 >Here's an example of how a class variable can be defined in C++:
 >
 ```
->#include <iostream>
+#include <iostream>
 using namespace std;
 
 class BankAccount {
@@ -199,3 +199,241 @@ int main() {
 >We create two new `BankAccount` objects called `acct1` and `acct2`, and print their initial balances using the `getBalance` method. We call the `addInterest` method on `acct1`, which adds interest to its balance using the `interestRate` class variable. We then print the updated balance of `acct1`.
 >
 >This is just a simple example, but it demonstrates how a class variable can be defined and used to store data that is shared by all instances of a class in C++.
+
+### Composition
+>
+>In computer science, composition is a concept that refers to the ability to combine simple or complex objects to create more complex objects. Composition allows objects to be constructed from other objects, creating a hierarchical structure of objects.
+>
+>Composition is a form of object aggregation, where objects are combined to create a more complex object. Unlike inheritance, where a class inherits properties and methods from a parent class, composition allows objects to be combined in any way desired.
+>
+>In composition, an object is made up of one or more other objects, which are called its component objects. The component objects are created independently of the composite object, and they can be shared by multiple composite objects.
+>
+>Here's an example of how composition can be used in Python:
+>
+```
+class Engine:
+    def start(self):
+        print("Engine started.")
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+    def start(self):
+        print("Starting car...")
+        self.engine.start()
+
+my_car = Car()
+my_car.start()
+```
+>
+>In this example, we have a `Car` class that is composed of an `Engine` class. The `Engine` class has a `start` method that prints "Engine started." The `Car` class has an `__init__` method that creates a new `Engine` object and assigns it to the `engine` attribute. The `Car` class also has a `start` method that calls the `start` method of the `Engine` object.
+>
+>When we create a new `Car` object and call its `start` method, it prints "Starting car..." and then calls the `start` method of the `Engine` object, which prints "Engine started." This demonstrates how composition can be used to create more complex objects from simpler objects.
+>
+>Composition allows objects to be composed in a flexible and dynamic way, making it a powerful tool for building complex software systems.
+>
+>Here's an example of how composition can be used in C++:
+>
+```
+#include <iostream>
+using namespace std;
+
+class Engine {
+public:
+    void start() {
+        cout << "Engine started." << endl;
+    }
+};
+
+class Car {
+public:
+    Car() {
+        engine = new Engine();
+    }
+
+    void start() {
+        cout << "Starting car..." << endl;
+        engine->start();
+    }
+
+private:
+    Engine* engine;
+};
+
+int main() {
+    Car my_car;
+    my_car.start();
+
+    return 0;
+}
+```
+>
+>In this example, we have a `Car` class that is composed of an `Engine` class. The `Engine` class has a `start` method that prints "Engine started." The `Car` class has a constructor that creates a new `Engine` object using dynamic memory allocation and assigns it to a private `engine` pointer.
+>
+>The `Car` class also has a `start` method that prints "Starting car..." and then calls the `start` method of the `Engine` object using the `->` operator.
+>
+>When we create a new `Car` object and call its `start` method, it prints "Starting car..." and then calls the `start` method of the `Engine` object, which prints "Engine started." This demonstrates how composition can be used to create more complex objects from simpler objects.
+>
+>Composition allows objects to be composed in a flexible and dynamic way, making it a powerful tool for building complex software systems in C++.
+
+### Constructor
+>
+>In computer science, a constructor is a special method that is used to initialize an object of a class. It is called when an object is created and is responsible for setting the initial values of the object's data members and performing any other necessary setup operations.
+>
+>In most object-oriented programming languages, a constructor is defined with the same name as the class and is usually declared as public. It can take parameters to allow for customization of the initialization process.
+>
+>Here's an example of a constructor in Python:
+>
+```
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+person1 = Person("Alice", 25)
+```
+>
+>In this example, we have a `Person` class that has a constructor defined with the `__init__` method. The constructor takes two parameters, `name` and `age`, and assigns them to the object's `name` and `age` attributes.
+>
+>When we create a new `Person` object and pass in the values "Alice" and 25, the constructor is called automatically and initializes the object's `name` and `age` attributes with those values.
+>
+>Here's an example of a constructor in C++:
+>
+```
+#include <iostream>
+using namespace std;
+
+class Person {
+public:
+    Person(string name, int age) {
+        this->name = name;
+        this->age = age;
+    }
+
+    void print() {
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+    }
+
+private:
+    string name;
+    int age;
+};
+
+int main() {
+    Person person1("Alice", 25);
+    person1.print();
+
+    return 0;
+}
+```
+>
+>In this example, we have a `Person` class that has a constructor defined with the same name as the class. The constructor takes two parameters, `name` and `age`, and assigns them to the object's `name` and `age` data members using the `this` pointer.
+>
+>When we create a new `Person` object and pass in the values "Alice" and 25, the constructor is called automatically and initializes the object's `name` and `age` data members with those values. We then call the `print` method to output the values to the console.
+>
+>Constructors are a fundamental concept in object-oriented programming and are used extensively to initialize objects with default or custom values.
+
+### Encapsulation
+>
+>In computer science, encapsulation is the concept of hiding the internal details of an object from the outside world and exposing a public interface through which other objects can interact with it. Encapsulation is a key principle of object-oriented programming and is often achieved through the use of access modifiers such as public, private, and protected.
+>
+>The public interface of an object consists of its methods and properties that are intended to be used by other objects. These methods and properties can be accessed from outside the object, but the internal details of how they work are hidden from view.
+>
+>Encapsulation provides several benefits, including:
+>
+>- Increased security: By hiding the internal details of an object, we can prevent unauthorized access and manipulation of its data.
+>
+>- Improved maintainability: Encapsulation allows us to make changes to the internal implementation of an object without affecting the way other objects interact with it.
+>
+>- Reduced complexity: By exposing only a public interface, we can simplify the way other objects interact with an object and reduce the complexity of the system as a whole.
+>
+>Here's an example of encapsulation in Java:
+>
+```
+public class BankAccount {
+    private double balance;
+
+    public BankAccount(double initialBalance) {
+        balance = initialBalance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        if (amount > balance) {
+            throw new IllegalArgumentException("Insufficient funds");
+        }
+        balance -= amount;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+```
+>
+>In this example, we have a `BankAccount` class that encapsulates a bank account with a balance. The `balance` variable is declared as private, which means that it can only be accessed from within the class itself.
+>
+>The class provides a public interface through the `deposit`, `withdraw`, and `getBalance` methods. These methods allow other objects to interact with the `BankAccount` object by depositing and withdrawing funds and retrieving the current balance.
+>
+>By encapsulating the `balance` variable and providing a public interface, we can ensure that the internal details of the `BankAccount` object are hidden from the outside world while still allowing other objects to interact with it in a controlled and secure way.
+
+### Friends
+>
+>In computer science, a "friend" is a concept used in object-oriented programming that allows a function or class to access private or protected data of another class. A friend function or class is granted access to the private and protected members of another class, even though they are not members of that class.
+>
+>A friend function or class is declared using the `friend` keyword. This allows the specified function or class to access private and protected members of the class that declared it as a friend.
+>
+>Here's an example in C++:
+>
+```
+class MyClass {
+private:
+    int privateData;
+
+    friend int friendFunction(MyClass& myClass);
+
+public:
+    MyClass(int data) : privateData(data) {}
+
+    int getPrivateData() {
+        return privateData;
+    }
+};
+
+int friendFunction(MyClass& myClass) {
+    return myClass.privateData;
+}
+
+int main() {
+    MyClass myObject(42);
+
+    // Accessing privateData through friendFunction
+    int data = friendFunction(myObject);
+
+    std::cout << data << std::endl; // Outputs 42
+
+    return 0;
+}
+```
+>
+>In this example, we have a `MyClass` class with a private member variable `privateData`. We also have a friend function `friendFunction` that takes a reference to a `MyClass` object and returns its `privateData` member.
+>
+>By declaring `friendFunction` as a friend of `MyClass`, we are granting it access to the private `privateData` member of `MyClass`. In the `main` function, we create a `MyClass` object and call `friendFunction` to access its private data.
+>
+>Note that friends can be useful in certain situations, but they can also violate the principles of encapsulation and make your code harder to maintain. Therefore, it's important to use friends sparingly and only when necessary.
+>
+>
+>![image](https://user-images.githubusercontent.com/123034903/235333574-a583f4c9-fc3b-4689-b477-f778dcbe5da6.png)
+>
+>![image](https://user-images.githubusercontent.com/123034903/235333589-943ea6ea-f34b-4888-9104-b3e9fb627e6e.png)
+
+
+
+
+
+
