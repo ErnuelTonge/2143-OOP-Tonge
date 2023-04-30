@@ -75,3 +75,32 @@ person1.say_hello()  # Output: "Hello, my name is John and I am 30 years old."
 >We also define a method called say_hello that uses the attributes of the Person object to print a message.
 >
 >We then create a new Person object called person1, and set its attributes using dot notation (person1.name = "John" and person1.age = 30). We can access the attributes of person1 using dot notation (person1.name and person1.age), and call the say_hello method on person1 to print a message using its attributes.
+
+### Class
+>
+>In computer science, a class is a blueprint or template that defines the characteristics and behaviors of a certain type of object. A class defines a set of attributes and methods that are common to all objects of that type.
+>
+>Attributes, also known as member variables or properties, represent the state or data associated with an object. Methods, also known as member functions or operations, represent the behavior or actions that can be performed on the object.
+>
+>A class typically encapsulates its attributes and methods, meaning that they are kept together and can only be accessed from within the class or through its public interface. The public interface is a set of methods that can be called from outside the class to interact with its objects.
+>
+>Here's an example of how a class can be defined in Python:
+><img width="421" alt="image" src="https://user-images.githubusercontent.com/123034903/235332014-b5120d60-f330-4ae1-80ec-43a2acf1b4d3.png">
+>
+>In this example, we define a class called Rectangle that has two attributes: width and height. We also define two methods: area, which calculates the area of the rectangle, and perimeter, which calculates its perimeter.
+>
+>The __init__ method is a special method that is called when a new object of the class is created. It takes two arguments, width and height, and sets the corresponding attributes of the object.
+>
+>We can create new Rectangle objects using the class, and access their attributes and methods using dot notation:
+>
+><img width="371" alt="image" src="https://user-images.githubusercontent.com/123034903/235332045-da2a4743-b102-485a-9c9e-1012360af50d.png">
+>
+><img width="545" alt="image" src="https://user-images.githubusercontent.com/123034903/235332105-84b71319-2bbf-46a0-b802-7f5ab8e04f53.png">
+>
+>In this example, we define a class called Rectangle that has two private attributes: width and height. Private attributes can only be accessed from within the class, and not from outside.
+>
+>We also define two public methods: area, which calculates the area of the rectangle, and perimeter, which calculates its perimeter.
+>
+>The constructor of the Rectangle class takes two arguments, w and h, and initializes the width and height attributes of the object.
+>
+>We create a new Rectangle object called rect1 and calculate its area and perimeter using the area and perimeter methods. We can then print the results using cout.
