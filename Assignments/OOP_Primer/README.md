@@ -432,8 +432,61 @@ int main() {
 >
 >![image](https://user-images.githubusercontent.com/123034903/235333589-943ea6ea-f34b-4888-9104-b3e9fb627e6e.png)
 
+### Inheritance
+>
+>In computer science, inheritance is a key concept in object-oriented programming that allows a new class to be based on an existing class, inheriting all of its properties and methods. The existing class is called the base class or parent class, and the new class is called the derived class or child class.
+>
+>The derived class inherits all the properties and methods of the base class, and it can also add new properties and methods or modify the behavior of inherited ones. This enables the reuse of code and reduces the amount of duplicate code.
+>
+>Inheritance is represented using an "is-a" relationship, where the derived class is a specialized version of the base class. For example, if we have a base class called Animal, we can create a derived class called Cat that inherits all the properties and methods of Animal, but also adds its own properties and methods specific to a cat.
+>
+>Here's an example of inheritance in C++:
+>
+```
+#include <iostream>
+using namespace std;
 
+class Animal {
+protected:
+    string name;
+public:
+    Animal(string n) {
+        name = n;
+    }
+    void eat() {
+        cout << name << " is eating." << endl;
+    }
+    void sleep() {
+        cout << name << " is sleeping." << endl;
+    }
+};
 
+>class Cat : public Animal {
+>public:
+    >Cat(string n) : Animal(n) {}
+    >void meow() {
+        >cout << "Meow!" << endl;
+    >}
+>};
+>
+>int main() {
+    >Cat myCat("Fluffy");
+    >myCat.eat(); // Calls eat() method from Animal class
+    >myCat.sleep(); // Calls sleep() method from Animal class
+    >myCat.meow(); // Calls meow() method from Cat class
+    >return 0;
+>}
+>```
+>
+>In this example, we have a base class `Animal` that has a `name` property and two methods `eat` and `sleep`. We also have a derived class `Cat` that inherits from `Animal` and adds its own method `meow`.
+>
+>We create a `Cat` object in the `main` function and call its inherited methods `eat` and `sleep`, as well as its own method `meow`. The `public` keyword is used to indicate that `Cat` publicly inherits from `Animal`, meaning that all the public members of the `Animal` class are accessible in the `Cat` class.
+>
+>![image](https://user-images.githubusercontent.com/123034903/235333869-9683f1ec-ba31-47a1-a6ff-1406231d43ed.png)
+>
+>![image](https://user-images.githubusercontent.com/123034903/235333912-5f1592ad-58e1-42a2-8f6c-e18a829231db.png)
+
+### Instance Variable
 
 
 
