@@ -463,18 +463,18 @@ int main() {
 >
 >class Cat : public Animal {
 >public:
-    >Cat(string n) : Animal(n) {}
-    >void meow() {
-        >cout << "Meow!" << endl;
-    >}
+>    Cat(string n) : Animal(n) {}
+>    void meow() {
+>        cout << "Meow!" << endl;
+>    }
 >};
 >
 >int main() {
-    >Cat myCat("Fluffy");
-    >myCat.eat(); // Calls eat() method from Animal class
-    >myCat.sleep(); // Calls sleep() method from Animal class
-    >myCat.meow(); // Calls meow() method from Cat class
-    >return 0;
+>    Cat myCat("Fluffy");
+>    myCat.eat(); // Calls eat() method from Animal class
+>    myCat.sleep(); // Calls sleep() method from Animal class
+>    myCat.meow(); // Calls meow() method from Cat class
+>    return 0;
 >}
 >```
 >
@@ -487,6 +487,75 @@ int main() {
 >![image](https://user-images.githubusercontent.com/123034903/235333912-5f1592ad-58e1-42a2-8f6c-e18a829231db.png)
 
 ### Instance Variable
-
+>In computer science, an instance variable is a variable that belongs to a specific instance of a class. It is also known as a non-static member variable, because it is not shared by all instances of the class and has a different value for each instance.
+>
+>When a new object is created from a class, it has its own set of instance variables that are initialized to their default values, or to the values provided in the constructor. Instance variables are typically declared as private or protected, to encapsulate the state of the object and prevent direct access from outside the class.
+>
+>Instance variables can be accessed and modified using the dot notation (.) on an object of the class, as in object.variable. They can also be accessed and modified from within the methods of the class using the this keyword, which refers to the current instance of the class.
+>
+>
+>
+>Here's an example in C++:
+>
+>```
+>#include <iostream>
+>using namespace std;
+>
+>class Car {
+>    private:
+>        string make;
+>        string model;
+>        int year;
+>
+>    public:
+>        Car(string make, string model, int year) {
+>            this->make = make;
+>            this->model = model;
+>            this->year = year;
+>        }
+>
+>        void setMake(string make) {
+>            this->make = make;
+>        }
+>
+>        string getMake() {
+>            return make;
+>        }
+>
+>        void setModel(string model) {
+>            this->model = model;
+>        }
+>
+>        string getModel() {
+>            return model;
+>        }
+>
+>        void setYear(int year) {
+>            this->year = year;
+>        }
+>
+>        int getYear() {
+>            return year;
+>        }
+>
+>        void printDetails() {
+>            cout << make << " " << model << " (" << year << ")" << endl;
+>        }
+>};
+>
+>int main() {
+>    Car myCar("Toyota", "Corolla", 2022);
+>    myCar.printDetails(); // Prints "Toyota Corolla (2022)"
+>
+>    myCar.setMake("Honda");
+>    myCar.printDetails(); // Prints "Honda Corolla (2022)"
+>
+>    return 0;
+>}
+>```
+>
+>In this example, we have a class `Car` with three instance variables `make`, `model`, and `year`. The constructor takes these variables as parameters and initializes them to the values provided. We also have setter and getter member functions to access and modify the instance variables, and a `printDetails` member function to print the details of the car.
+>
+>We create a `Car` object in the `myCar` variable and call its `printDetails` member function to print the details of the car. We also use the `setMake` member function to change the value of the `make` instance variable to "Honda", and then call `printDetails` again to see the updated details.
 
 
