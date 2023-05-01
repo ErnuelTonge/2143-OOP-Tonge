@@ -1,0 +1,22 @@
+Name: Ernuel Tonge
+Date: 03/09/2023
+Fall 2143
+
+digraph BinarySearchTreeGraph {
+	rankdir=TB;
+	0 [label="{ <data> 0 | { <left> | <right> } }",  color="black", shape="record"]
+	1 [label="{ <data> 1 | { <left> | <right> } }",  color="black", shape="record"]
+	2 [label="{ <data> 2 | { <left> | <right> } }",  color="black", shape="record"]
+	3 [label="{ <data> 3 | { <left> | <right> } }",  color="black", shape="record"]
+	4 [label="{ <data> 7 | { <left> | <right> } }",  color="purple", shape="record"]
+	5 [label="{ <data> 4 | { <left> | <right> } }",  color="black", shape="record"]
+	6 [label="{ <data> 5 | { <left> | <right> } }",  color="black", shape="record"]
+
+	0:right:c -> 1 [arrow_type="vee", color="black", dir="forward"] 
+	0:left:c -> 2 [arrow_type="vee", color="black", dir="forward"] 
+	1:right:c -> 5 [arrow_type="vee", color="black", dir="forward"] 
+	2:right:c -> 3 [arrow_type="vee", color="black", dir="forward"] 
+	2:left:c -> 4 [arrow_type="vee", color="black", dir="forward"] 
+	5:left:c -> 6 [arrow_type="vee", color="black", dir="forward"] 
+}
+
