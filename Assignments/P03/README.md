@@ -24,5 +24,5 @@
 
 ### Instructions
 
-N/A
+This project implements a complete graph container consisting of a vector of Edges, a vector of Nodes. The Graphviz class of this project then prints its contents of this class in one of 4 formats which has to be passed in by the user, the generic format, Linked List format, Doubly Linked List format, Binary Search Tree format. The graph's default is set to drirected = true which prints the first 3 formats but must be change to false during declarationto print in the undirected format for the  Binary Search Tree Graphviz dot code syntax. The Nodes and Edges are then printed to the test.out textfile in Graphviz dot code syntax where it can be coppied and pasted into graphviz.org.
 
