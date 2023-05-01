@@ -19,8 +19,8 @@
 
 |   #   | File            | Description                                        |
 | :---: | --------------- | -------------------------------------------------- |
-|   1   | [main.cpp](https://github.com/ErnuelTonge/2143-OOP-Tonge/blob/main/Assignments/P02/main.cpp)        | Main driver of my project                          |
-|   2   | [output.txt](https://github.com/ErnuelTonge/2143-OOP-Tonge/blob/main/Assignments/P02/output.txt)      | Out put file generated using test code             |
+|   1   | [main.cpp](https://github.com/ErnuelTonge/2143-OOP-Tonge/blob/main/Assignments/P03/main.cpp)        | Main driver of my project                          |
+|   2   | [test.out](https://github.com/ErnuelTonge/2143-OOP-Tonge/blob/main/Assignments/P03/test.out)      | Out put file generated using test code             |
 
 ### Instructions
 
