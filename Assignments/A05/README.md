@@ -35,7 +35,7 @@
 
 ### Weapon
 
-<img width="361" alt="image" src="https://user-images.githubusercontent.com/123034903/236302795-d28cffc4-0eed-4f10-b6a4-feeae0dbcecd.png">
+<img width="323" alt="image" src="https://user-images.githubusercontent.com/123034903/236345127-5e287975-8f18-4516-af5b-c5cd8a5b5db6.png">
 
 ### Item
 
@@ -86,7 +86,7 @@
 
 ### Sorcerer
 
-<img width="247" alt="image" src="https://user-images.githubusercontent.com/123034903/236331495-a55aaece-b8d6-429e-90d7-440e9b7a595c.png">
+<img width="243" alt="image" src="https://user-images.githubusercontent.com/123034903/236345054-ec0ad318-48db-4664-bcef-5784a495f4f9.png">
 
 
 ### Warlock
