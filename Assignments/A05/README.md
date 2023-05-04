@@ -77,7 +77,7 @@
 
 ### Spell Casters
 
-<img width="271" alt="image" src="https://user-images.githubusercontent.com/123034903/236331177-c4be184f-79e4-4466-b230-12f4664267c6.png">
+<img width="269" alt="image" src="https://user-images.githubusercontent.com/123034903/236345383-684fedb9-0cbf-4ba5-835a-09d2a36c37bf.png">
 
 
 ### Druid 
