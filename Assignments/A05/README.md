@@ -8,6 +8,16 @@
 
 <img width="243" alt="image" src="https://user-images.githubusercontent.com/123034903/236326176-5ccff338-957d-4318-ad6f-e88b778bbdf0.png">
 
+### Dice
+
+<img width="246" alt="image" src="https://user-images.githubusercontent.com/123034903/236359812-0372202c-f9e8-4ca0-b6c8-dfbe3cbb3d6b.png">
+
+
+### Die
+
+<img width="247" alt="image" src="https://user-images.githubusercontent.com/123034903/236359848-5bd7bc16-9112-45e9-99a7-8b321c1c8956.png">
+
+
 ### GameMaster
 
 <img width="217" alt="image" src="https://user-images.githubusercontent.com/123034903/236326530-a2800548-4e39-4d10-bce2-026a656e62e5.png">
@@ -75,6 +85,21 @@
 <img width="244" alt="image" src="https://user-images.githubusercontent.com/123034903/236330996-271abb77-34e5-487f-844b-be36ea1326a2.png">
 
 
+### Support Character
+
+<img width="228" alt="image" src="https://user-images.githubusercontent.com/123034903/236365220-e95ca657-4c59-46e5-a98b-5ef735c1b448.png">
+
+
+### Bard
+
+<img width="232" alt="image" src="https://user-images.githubusercontent.com/123034903/236365330-7da222c0-bd64-4e66-aa86-46dbf8a760de.png">
+
+
+### Cleric
+
+<img width="231" alt="image" src="https://user-images.githubusercontent.com/123034903/236365390-017265f3-271b-407d-8791-50576c070e12.png">
+
+
 ### Spell Casters
 
 <img width="269" alt="image" src="https://user-images.githubusercontent.com/123034903/236345383-684fedb9-0cbf-4ba5-835a-09d2a36c37bf.png">
@@ -93,3 +118,7 @@
 
 <img width="243" alt="image" src="https://user-images.githubusercontent.com/123034903/236331800-bc120071-0065-4bbb-8ada-f2bddec93654.png">
 
+
+### Diagram
+
+<img width="554" alt="image" src="https://user-images.githubusercontent.com/123034903/236365028-5f8ad720-a7c1-45f7-998f-c628a3cafb80.png">
