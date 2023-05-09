@@ -13,9 +13,9 @@ with different data sources (files, other vectors, and arrays).
 
 |   #   | File            | Description                                        |
 | :---: | --------------- | -------------------------------------------------- |
-|   1   | [main.cpp](https://github.com/ErnuelTonge/2143-OOP-Tonge/blob/main/Assignments/P04/main.py)       | Main driver of my project  main.py file               |
-|   2   | [test.out](https://github.com/ErnuelTonge/2143-OOP-Tonge/blob/main/Assignments/P04/Dice.py)      | Class implementation and dice_tester file              |
-|   3   | [input.dat](https://github.com/ErnuelTonge/2143-OOP-Tonge/blob/main/Assignments/P04/Dice.py)      | Class implementation and dice_tester file             |
+|   1   | [main.cpp](https://github.com/ErnuelTonge/2143-OOP-Tonge/blob/main/Assignments/P01/main.cpp)       | Main driver of my project  main.py file               |
+|   2   | [test.out](https://github.com/ErnuelTonge/2143-OOP-Tonge/blob/main/Assignments/P01/test.out)      | Output file              |
+|   3   | [input.dat](https://github.com/ErnuelTonge/2143-OOP-Tonge/blob/main/Assignments/P01/input.dat)      | Input data file             |
 
 ### Instructions
 
